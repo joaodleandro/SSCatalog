@@ -22,7 +22,6 @@
   right: -50px !important; /* Move a seta da direita mais para a direita */
 }
       
-
 .carousel-container {
         width: 60%; /* Ajuste a largura conforme necessário */
         margin: 10px auto; /* 10px de margem superior e inferior, e centralize o carrossel horizontalmente */
@@ -35,7 +34,42 @@
         margin-bottom: 0;
 }
       
-      
-      
+.custom-width {
+  width: 50%; /* Ajuste a largura desejada aqui */
+}    
 
+.custom-button-prevTen {
+  position: absolute;
+  left: 20px; /* Ajuste a posição horizontal conforme necessário */
+  top: 100px; /* Move o botão mais para cima (valor negativo) */
+  transform: translateY(-50%);
+}
 
+.custom-button-prevTen {
+  position: absolute;
+  left: -50px; /* Ajuste a posição horizontal conforme necessário */
+  top: 100px; /* Move o botão mais para cima (valor negativo) */
+  transform: translateY(-50%);
+  background-color: white; 
+  color: rgb(0, 0, 0); 
+  border: none; /* Remove a borda se necessário */
+}
+
+.custom-button-nextTen {
+  position: absolute;
+  right: -50px; /* Ajuste a posição horizontal conforme necessário */
+  top: 100px; /* Move o botão mais para cima (valor negativo) */
+  transform: translateY(-50%);
+  background-color: white; 
+  color: rgb(0, 0, 0); 
+  border: none; /* Remove a borda se necessário */
+}
+
+.custom-button-prevTen i,
+.custom-button-nextTen i {
+  font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+.navbar {
+  background-color: pink; /* Define a cor de fundo como rosa */
+}
