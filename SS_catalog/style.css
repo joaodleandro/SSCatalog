@@ -1,0 +1,41 @@
+/* Anule os estilos padrão do Bootstrap para os controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: black !important;
+  color: white !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.carousel-control-prev {
+  left: -50px !important; /* Move a seta da esquerda mais para a esquerda */
+}
+      
+.carousel-control-next {
+  right: -50px !important; /* Move a seta da direita mais para a direita */
+}
+      
+
+.carousel-container {
+        width: 60%; /* Ajuste a largura conforme necessário */
+        margin: 10px auto; /* 10px de margem superior e inferior, e centralize o carrossel horizontalmente */
+        position: relative; /* Permitirá posicionar os controles de forma relativa a este contêiner */
+        display: block; /* Defina o elemento como bloco para evitar margens extras na parte inferior */
+}
+
+.carousel {
+        margin-top: 0;
+        margin-bottom: 0;
+}
+      
+      
+      
+
+
