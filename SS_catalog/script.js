@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    var currentPage = 1; // A página atual
-    var totalPages = 24; // O total de páginas no catálogo
+    var currentPage = 1;
 
     var carouselElement = document.getElementById("carouselExample");
 
@@ -9,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var prevArrow = carouselElement.querySelector(".carousel-control-prev");
     prevArrow.classList.add("d-none");
+    var nextArrow = carouselElement.querySelector(".carousel-control-next");
 
     var totalSlides = carouselElement.querySelectorAll(".carousel-item").length;
 
     carouselElement.addEventListener("slide.bs.carousel", function (e) {
-        var nextArrow = carouselElement.querySelector(".carousel-control-next");
 
         if (e.to === 0) {
         prevArrow.classList.add("d-none");
@@ -45,11 +44,23 @@ document.addEventListener("DOMContentLoaded", function () {
      }
    });
    
+   prevArrow.addEventListener("click", function () {
+    currentPage-=1
+    updatePageTracker();
+  });
+
    prevTenButton.addEventListener("click", function () {
      var currentSlide = carouselElement.querySelector(".active");
      var currentIndex = Array.from(carouselElement.querySelectorAll(".carousel-item")).indexOf(currentSlide);
      var targetIndex = Math.max(currentIndex - 10, 0);
      carousel.to(targetIndex);
+     currentPage=Math.max(currentPage - 10, 1);
+     updatePageTracker();
+   });
+
+   nextArrow.addEventListener("click", function () {
+    currentPage+=1
+    updatePageTracker();
    });
  
    nextTenButton.addEventListener("click", function () {
@@ -58,12 +69,17 @@ document.addEventListener("DOMContentLoaded", function () {
      var totalSlides = carouselElement.querySelectorAll(".carousel-item").length;
      var targetIndex = Math.min(currentIndex + 10, totalSlides - 1);
      carousel.to(targetIndex);
+     currentPage=Math.min(currentPage + 10, 24);
+     updatePageTracker();
    });
 
-    // Atualize o elemento de rastreamento de página
-    var pageTracker = document.getElementById("pageTracker");
-    if (pageTracker) {
-        pageTracker.textContent = `Página ${currentPage} de ${totalPages}`;
-    }   
+   function updatePageTracker() {
+        var pageTracker = document.getElementById("pageTracker");
+        if (pageTracker) {
+            pageTracker.textContent = `Página ${currentPage} de 24`;
+        }   
+   }
+
+   updatePageTracker();
 
 });
