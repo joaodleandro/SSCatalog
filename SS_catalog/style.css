@@ -74,8 +74,42 @@
   background-color: pink; /* Define a cor de fundo como rosa */
 }
 
+.button-icon {
+  font-size: 2rem; /* Tamanho padrão */
+  color: pink;
+}
 
-@media (max-width: 767px) {
+.button-icon-secondary {
+  font-size: 2rem; /* Tamanho padrão */
+  color: rgb(255, 255, 255);
+}
+
+.landscape-warning {
+  display: none; /* Ocultar o aviso por padrão */
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    display: none; /* Ocultar o conteúdo quando na orientação retrato */
+  }
+  .landscape-warning {
+    display: block; /* Mostrar o aviso em dispositivos móveis */
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .button-icon {
+    font-size: 1rem; /* Tamanho menor para dispositivos menores */
+    color: pink;
+  }
+
+  .button-icon-secondary {
+    font-size: 1rem; /* Tamanho padrão */
+    color: rgb(255, 255, 255);
+  }
   /* Anule os estilos padrão do Bootstrap para os controles do carrossel para dispositivos móveis */
   .carousel-control-prev,
   .carousel-control-next {
