@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
     carouselElement.addEventListener("slide.bs.carousel", function (e) {
 
         if (e.to === 0) {
-        prevArrow.classList.add("d-none");
-        nextArrow.classList.remove("d-none");
+            prevArrow.classList.add("d-none");
+            nextArrow.classList.remove("d-none");
         } else if (e.to === totalSlides - 1) {
-        prevArrow.classList.remove("d-none");
-        nextArrow.classList.add("d-none");
+            prevArrow.classList.remove("d-none");
+            nextArrow.classList.add("d-none");
         } else {
-        prevArrow.classList.remove("d-none");
-        nextArrow.classList.remove("d-none");
+            prevArrow.classList.remove("d-none");
+            nextArrow.classList.remove("d-none");
         }
   });
 

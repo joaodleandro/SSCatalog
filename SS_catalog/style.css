@@ -73,3 +73,30 @@
 .navbar {
   background-color: pink; /* Define a cor de fundo como rosa */
 }
+
+
+@media (max-width: 767px) {
+  /* Anule os estilos padrão do Bootstrap para os controles do carrossel para dispositivos móveis */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px !important; /* Reduza o tamanho dos botões para dispositivos móveis */
+    height: 30px !important;
+    /* ... Outros estilos específicos para dispositivos móveis ... */
+  }
+
+  .carousel-container {
+    width: 80%; /* Ajuste a largura conforme necessário para dispositivos móveis */
+    /* ... Outros estilos específicos para dispositivos móveis ... */
+  }
+
+  .custom-width {
+    width: 50%; /* Ajuste a largura desejada aqui para dispositivos móveis */
+    /* ... Outros estilos específicos para dispositivos móveis ... */
+  }
+
+  .custom-button-prevTen,
+  .custom-button-nextTen {
+    /* Ajuste as posições horizontais e superiores conforme necessário para dispositivos móveis */
+    /* ... Outros estilos específicos para dispositivos móveis ... */
+  }
+}
