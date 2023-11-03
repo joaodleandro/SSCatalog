@@ -3,28 +3,37 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>By Sofia Soeiro - Catalog</title>
 
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
-  
+        <link rel="icon" type="image/x-icon" href="/media/logo/logo_white.png">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/584d9761ba.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
       
-      <nav class="navbar bg-body-tertiary"  data-bs-theme="dark">
+      <nav class="navbar" data-bs-theme="dark">
             <div class="container-fluid">
-                  <div class="navbar-brand mx-auto text-white" id="pageTracker"></div>
+                  <img src="/media/logo/logo_white.png" alt="Logo" class="navbar-logo">
+                  <div class="navbar-brand mx-auto text-white custom-font" id="pageTracker"></div>
                   <button class="btn btn-link btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
-                        <i class="fa-solid fa-cart-shopping button-icon"></i>
+                        <i class="fa-solid fa-cart-shopping button-icon-secondary"></i>
                   </button>                
             </div>
       </nav>
       
-      <div class="landscape-warning"><h1>Por favor, gire seu dispositivo para a orientação horizontal.</h1></div>
+      <div class="landscape-warning centered-image">
+            <h1 class="text-black custom-font mt-5 mb-2">Por favor, gire seu dispositivo para a orientação horizontal.</h1>
+            <img src="/media/images/rotate.png" alt="Rotate Your Phone">
+      </div>
+      
+      
       <div class="content">
       <div id="carouselExample" class="carousel slide">
       <div class="carousel-container">
@@ -39,7 +48,7 @@
                         <img src="/media/images/2.png" class="float-left custom-width" alt="">
                         <img src="/media/images/3.png" class="custom-width" alt="">
                   </div>
-                  <button class="btn btn-link btn-sm position-absolute" style="right: 5%; bottom: 39%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="1,2,3,4,5" data-product-names="Conjunto Irregular, Colar Irregular (Dourado), Colar Irregular (Prateado), Brincos Irregulares (Dourado), Brincos Irregulares (Prateado)" data-product-prices="23,13,13,13,13" data-product-modal-id="irregulares">
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 5%; bottom: 39%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="1,2,3,4,5,6" data-product-names="Conjunto Irregular (Dourado), Conjunto Irregular (Prateado), Colar Irregular (Dourado), Colar Irregular (Prateado), Brincos Irregulares (Dourado), Brincos Irregulares (Prateado)" data-product-prices="23,23,13,13,13,13" data-product-modal-id="irregulares">
                         <i class="fa-solid fa-bag-shopping button-icon"></i>
                   </button>                  
             </div>
@@ -48,10 +57,10 @@
                         <img src="/media/images/4.png" class="float-left custom-width" alt="">
                         <img src="/media/images/5.png" class="custom-width" alt="">
                   </div>
-                  <button class="btn btn-link btn-sm position-absolute" style="right: 50%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="6,7,8" data-product-names="Conjunto Trevo Madrepérola, Colar Trevo Madrepérola, Brincos Trevo Madrepérola" data-product-prices="23,13,13" data-product-modal-id="trevo">
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 50%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="7,8,9" data-product-names="Conjunto Trevo Madrepérola, Colar Trevo Madrepérola, Brincos Trevo Madrepérola" data-product-prices="23,13,13" data-product-modal-id="trevo">
                         <i class="fa-solid fa-bag-shopping button-icon"></i>
                   </button>
-                  <button class="btn btn-link btn-sm position-absolute" style="right: 9%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="9,10,11" data-product-names="Conjunto Rosas, Colar Rosa, Brincos Rosa" data-product-prices="23,12,13" data-product-modal-id="rosas">
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 9%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="10,11,12,13,14,15" data-product-names="Conjunto Rosas (Dourado), Conjunto Rosas (Prateado), Colar Rosa (Dourado), Colar Rosa (Prateado), Brincos Rosa (Dourado), Brincos Rosa (Prateado)" data-product-prices="23,23,12,12,13,13" data-product-modal-id="rosas">
                         <i class="fa-solid fa-bag-shopping button-icon"></i>
                   </button>
             </div>
@@ -60,10 +69,10 @@
                         <img src="/media/images/6.png" class="float-left custom-width" alt="">
                         <img src="/media/images/7.png" class="custom-width" alt="">
                   </div>
-                  <button class="btn btn-link btn-sm position-absolute" style="right: 50%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="12,13,14" data-product-names="Conjunto Pedra de Nascimento, Colar Pedra de Nascimento, Brincos Pedra de Nascimento" data-product-prices="17,10,9" data-product-modal-id="pedranascimento">
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 50%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="16,17,18" data-product-names="Conjunto Pedra de Nascimento, Colar Pedra de Nascimento, Brincos Pedra de Nascimento" data-product-prices="17,10,9" data-product-modal-id="pedranascimento">
                         <i class="fa-solid fa-bag-shopping button-icon"></i>
                   </button>
-                  <button class="btn btn-link btn-sm position-absolute" style="right: 3%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="15,16,17,18" data-product-names="Conjunto Coração de Viana, Colar Coração de Viana, Brincos Coração de Viana, Pulseira Coração de Viana" data-product-prices="35,15.5,12,12" data-product-modal-id="coracaoviana">
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 3%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="19,20,21,22,23,24,25,26" data-product-names="Conjunto Coração de Viana (Dourado), Conjunto Coração de Viana (Prateado), Colar Coração de Viana (Dourado), Colar Coração de Viana (Prateado), Brincos Coração de Viana (Dourado), Brincos Coração de Viana (Prateado), Pulseira Coração de Viana (Dourado), Pulseira Coração de Viana (Prateado)" data-product-prices="35,35,15.5,15.5,12,12,12,12" data-product-modal-id="coracaoviana">
                         <i class="fa-solid fa-bag-shopping button-icon"></i>
                   </button>             
             </div>
@@ -72,10 +81,10 @@
                         <img src="/media/images/8.png" class="float-left custom-width" alt="">
                         <img src="/media/images/9.png" class="custom-width" alt="">
                   </div>
-                  <button class="btn btn-link btn-sm position-absolute" style="right: 54%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="19,20,21" data-product-names="Conjunto Mini Zircónias, Colar Mini Zircónias, Brincos Mini Zircónias" data-product-prices="18,12,8" data-product-modal-id="minizirconias">
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 54%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="27,28,29,30,31,32" data-product-names="Conjunto Mini Zircónias (Dourado), Conjunto Mini Zircónias (Prateado), Colar Mini Zircónias (Dourado), Colar Mini Zircónias (Prateado), Brincos Mini Zircónias (Dourado), Brincos Mini Zircónias (Prateado)" data-product-prices="18,18,12,12,8,8" data-product-modal-id="minizirconias">
                         <i class="fa-solid fa-bag-shopping button-icon"></i>
                   </button>
-                  <button class="btn btn-link btn-sm position-absolute" style="right: 18%; bottom: 7%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="22" data-product-names="Colar coração" data-product-prices="14" data-product-modal-id="coracao">
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 18%; bottom: 7%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="33" data-product-names="Colar coração" data-product-prices="14" data-product-modal-id="colarcoracao">
                         <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
                   </button>    
             </div>
@@ -84,77 +93,164 @@
                         <img src="/media/images/10.png" class="float-left custom-width" alt="">
                         <img src="/media/images/11.png" class="custom-width" alt="">
                   </div>
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 56%; bottom: 9%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="34,35" data-product-names="Conjunto Estrelas (Dourado), Conjunto Estrelas (Prateado)" data-product-prices="50,50" data-product-modal-id="conjuntoestrelas">
+                        <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                  </button>
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 1%; bottom: 69%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="36,37" data-product-names="Colar Pérolas Naturais (Dourado), Colar Pérolas Naturais (Prateado)" data-product-prices="20,20" data-product-modal-id="colarperolasnaturais">
+                        <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                  </button>
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 1%; bottom: 36%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="38,39" data-product-names="Colar Estrela (Dourado), Colar Estrela (Prateado)" data-product-prices="14,14" data-product-modal-id="colarestrela">
+                        <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                  </button>   
+                  <button class="btn btn-link btn-sm position-absolute" style="right: 1%; bottom: 3%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="40,41" data-product-names="Colar Snake (Dourado), Colar Snake (Prateado)" data-product-prices="12,12" data-product-modal-id="colarsnake">
+                        <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                  </button>    
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/12.png" class="float-left custom-width" alt="">
                         <img src="/media/images/13.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 72%; bottom: 53%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="42,43" data-product-names="Brincos Gota (Dourado), Brincos Gota (Prateado)" data-product-prices="14,14" data-product-modal-id="brincosgota">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 13%; bottom: 52%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="44,45,46,47,48,49" data-product-names="Conjunto Signo (Dourado), Conjunto Signo (Prateado), Colar Signo (Dourado), Colar Signo (Prateado), Pulseira Signo (Dourado), Pulseira Signo (Prateado)" data-product-prices="20,20" data-product-modal-id="signos">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/14.png" class="float-left custom-width" alt="">
                         <img src="/media/images/15.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 64%; bottom: 53%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="50" data-product-names="Pulseira Olho" data-product-prices="12" data-product-modal-id="pulseiraolho">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 18%; bottom: 53%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="51" data-product-names="Pulseira Pérolas" data-product-prices="12" data-product-modal-id="pulseiraperolas">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/16.png" class="float-left custom-width" alt="">
                         <img src="/media/images/17.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 69%; bottom: 53%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="52" data-product-names="Pulseira Dupla Árvore da Vida" data-product-prices="12" data-product-modal-id="pulseiraarvoredavida">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 44%; bottom: 24%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="53" data-product-names="Pulseira Personalizável + 3 pendentes" data-product-prices="15" data-product-modal-id="pulseirapersonalizavel">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/18.png" class="float-left custom-width" alt="">
                         <img src="/media/images/19.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 44%; bottom: 7%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="54" data-product-names="Conjunto Colares Compridos" data-product-prices="40" data-product-modal-id="colarescompridos">
+                              <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/20.png" class="float-left custom-width" alt="">
                         <img src="/media/images/21.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 55%; bottom: 52%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="55" data-product-names="Colar Carta" data-product-prices="15.5" data-product-modal-id="colarcarta">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 53%; bottom: 2%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="56" data-product-names="Colar Coração" data-product-prices="15.5" data-product-modal-id="colarcoracao2">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 3%; bottom: 52%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="57" data-product-names="Colar Moeda" data-product-prices="15" data-product-modal-id="colarmoeda">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/22.png" class="float-left custom-width" alt="">
                         <img src="/media/images/23.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 62%; bottom: 40%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="58" data-product-names="Colar Duplo" data-product-prices="17" data-product-modal-id="colarduplo">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 15%; bottom: 46%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="59" data-product-names="Colar Olho Turco" data-product-prices="14" data-product-modal-id="colarolhoturco">
+                              <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/24.png" class="float-left custom-width" alt="">
                         <img src="/media/images/25.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 50%; bottom: 69%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="60,61" data-product-names="Colar Pérola (Dourado), Colar Pérola (Prateado)" data-product-prices="13,13" data-product-modal-id="colarperola">
+                              <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 50%; bottom: 34%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="62,63" data-product-names="Colar Mini Pérolas (Dourado), Colar Mini Pérolas (Prateado)" data-product-prices="14,14" data-product-modal-id="colarolminiperolas">
+                              <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 50%; bottom: 2%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="64,65" data-product-names="Corrente de Pérolas (Dourado), Corrente de Pérolas (Prateado)" data-product-prices="13,13" data-product-modal-id="correnteperolas">
+                              <i class="fa-solid fa-bag-shopping button-icon-secondary"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/26.png" class="float-left custom-width" alt="">
                         <img src="/media/images/27.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 68%; bottom: 8%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="66,67" data-product-names="Conjunto Flores (Dourado), Conjunto Flores (Prateado)" data-product-prices="15,15" data-product-modal-id="conjuntoflores">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 20%; bottom: 8%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="68,69" data-product-names="Conjunto Trevo (Dourado), Conjunto Trevo (Prateado)" data-product-prices="15,15" data-product-modal-id="conjuntotrevo">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/28.png" class="float-left custom-width" alt="">
                         <img src="/media/images/29.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 58%; bottom: 8%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="70,71" data-product-names="Conjunto Árvore da Vida (Dourado), Conjunto Árvore da Vida (Prateado)" data-product-prices="15,15" data-product-modal-id="conjuntoarvorevida">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/30.png" class="float-left custom-width" alt="">
                         <img src="/media/images/31.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 70%; bottom: 89%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="72,73" data-product-names="Brincos Lua (Dourado), Brincos Lua (Prateado)" data-product-prices="15,15" data-product-modal-id="brincoslua">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 69%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="74,75" data-product-names="Brincos Melting (Dourado), Brincos Melting (Prateado)" data-product-prices="13,13" data-product-modal-id="brincosmelting">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 20%; bottom: 89%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="76,77" data-product-names="Brincos Folhas (Dourado), Brincos Folhas (Prateado)" data-product-prices="14,14" data-product-modal-id="brincosfolhas">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/32.png" class="float-left custom-width" alt="">
                         <img src="/media/images/33.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 70%; bottom: 89%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="78,79" data-product-names="Brincos Flores (Dourado), Brincos Flores (Prateado)" data-product-prices="14,14" data-product-modal-id="brincosflores">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 12%; bottom: 53%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="80,81" data-product-names="Brincos Pérola do Rio (Dourado), Brincos Pérola do Rio (Prateado)" data-product-prices="12,12" data-product-modal-id="brincosperoladorio">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/34.png" class="float-left custom-width" alt="">
                         <img src="/media/images/35.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 60%; bottom: 52%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="82,83" data-product-names="Corrente Fígaro (Dourado), Corrente Fígaro (Prateado)" data-product-prices="13,13" data-product-modal-id="correntefigaro">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 19%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="84,85,86,87,88,89,90,91" data-product-names="Mini Brincos Corações (Dourado), Mini Brincos Corações (Prateado), Mini Brincos Cerejas (Dourado), Mini Brincos Cerejas (Prateado), Mini Brincos Flor (Dourado), Mini Brincos Flor (Prateado), Mini Brincos Zircónias (Dourado), Mini Brincos Zircónias (Prateado)" data-product-prices="7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5" data-product-modal-id="minibrincos">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
@@ -168,29 +264,71 @@
                         <img src="/media/images/38.png" class="float-left custom-width" alt="">
                         <img src="/media/images/39.png" class="custom-width" alt="">
                   </div>
+                  <div id="left">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 84%; bottom: 52%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="92,93" data-product-names="Anel Rosa (Dourado), Anel Rosa (Prateado)" data-product-prices="10,10" data-product-modal-id="anelrosa">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 60%; bottom: 52%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="94,95" data-product-names="Anel Flores (Dourado), Anel Flores (Prateado)" data-product-prices="9,9" data-product-modal-id="anelflores">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 84%; bottom: 2%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="96,97" data-product-names="Anel Enrolado (Dourado), Anel Enrolado (Prateado)" data-product-prices="10,10" data-product-modal-id="anelenrolado">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 60%; bottom: 2%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="98,99" data-product-names="Anel Corrente (Dourado), Anel Corrente (Prateado)" data-product-prices="9.5,9.5" data-product-modal-id="anelcorrente">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>             
+                  </div>
+                  <div id="right">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 35%; bottom: 52%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="100,101" data-product-names="Anel Coração (Dourado), Anel Coração (Prateado)" data-product-prices="10,10" data-product-modal-id="anelcoracao">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 10%; bottom: 52%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="102,103" data-product-names="Anel Detail (Dourado), Anel Detail (Prateado)" data-product-prices="9,9" data-product-modal-id="aneldetail">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 35%; bottom: 2%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="104,105" data-product-names="Anel Zircónias (Dourado), Anel Zircónias (Prateado)" data-product-prices="9,9" data-product-modal-id="anelzirconias">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 10%; bottom: 2%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="106,107" data-product-names="Anel Snake (Dourado), Anel Snake (Prateado)" data-product-prices="10,10" data-product-modal-id="anelsnake">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                  </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/40.png" class="float-left custom-width" alt="">
                         <img src="/media/images/41.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 62%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="108,109" data-product-names="Calendário Advento (Dourado), Calendário Advento (Prateado)" data-product-prices="45,45" data-product-modal-id="calendarioadvento">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/42.png" class="float-left custom-width" alt="">
                         <img src="/media/images/43.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 74%; bottom: 53%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="110" data-product-names="Porta Jóias" data-product-prices="15" data-product-modal-id="portajoias">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
                   <div class="d-flex">
                         <img src="/media/images/44.png" class="float-left custom-width" alt="">
                         <img src="/media/images/45.png" class="custom-width" alt="">
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 68%; bottom: 89%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="111" data-product-names="Brincos Cascata" data-product-prices="14.5" data-product-modal-id="brincoscascata">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 66%; bottom: 43%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="112,113" data-product-names="Argolas Zircónias (Dourado), Argolas Zircónias (Prateado)" data-product-prices="14.5,14.5" data-product-modal-id="argolaszirconias">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm position-absolute" style="right: 17%; bottom: 44%;" data-bs-toggle="modal" data-bs-target="#productModal" data-product-ids="114,115" data-product-names="Brincos Zircónias (Dourado), Brincos Zircónias (Prateado)" data-product-prices="13.5,13.5" data-product-modal-id="brincoszirconias">
+                              <i class="fa-solid fa-bag-shopping button-icon"></i>
+                        </button>
                   </div>
             </div>
             <div class="carousel-item">
-                  <div class="d-flex">
-                        <img src="/media/images/46.png" class="float-left custom-width" alt="">
-                        <img src="/media/images/47.png" class="custom-width" alt="Last slide">
+                  <div class="d-flex justify-content-center">
+                        <img src="/media/images/46.png" class="custom-width" alt="">
                   </div>
             </div>
             </div>
@@ -219,7 +357,7 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="productModalLabel">Detalhes do Produto</h5>
+                  <h5 class="modal-title custom-font" id="productModalLabel">Detalhes do Produto</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
@@ -227,7 +365,7 @@
                   <div id="productPrice"></div>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-primary" data-bs-dismiss="modal">Adicionar ao Carrinho</button>
+                  <button class="btn button-icon-pink" data-bs-dismiss="modal">Adicionar ao Carrinho</button>
                 </div>
               </div>
             </div>
@@ -239,16 +377,16 @@
             <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">
-                  <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+                  <h5 class="modal-title custom-font" id="cartModalLabel">Carrinho de Compras</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
-            <div class="modal-body" id="cartModalBody"> 
-                  <!-- Aqui você listará os produtos adicionados ao carrinho -->
-            </div>
+            <div class="modal-body" id="cartModalBody"></div>
             <div class="modal-footer">
                   <p>Total: $<span id="cartTotal">0.00</span></p>
                   <p>Itens: <span id="cartItemCount">0</span></p>
-                  <button class="btn btn-primary" id="whatsappButton" data-bs-dismiss="modal">Enviar pelo WhatsApp</button>
+                  <button class="btn btn-success" id="whatsappButton" data-bs-dismiss="modal">
+                        <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+                  </button>
             </div>
             </div>
             </div>

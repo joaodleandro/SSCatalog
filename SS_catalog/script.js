@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    if (localStorage.getItem("cart")) {
+      cart = JSON.parse(localStorage.getItem("cart"));
+      updateCartModal();
+    }
+
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+
     var currentPage = 1;
 
     var carouselElement = document.getElementById("carouselExample");
@@ -109,9 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
        <p>
          ${productNames[i]} - €${productPrices[i].toFixed(2)}
          <span>
-           <button class="btn btn-secondary btn-sm" onclick="decrementQuantity(${i}, ${productIds[i]})">-</button>
+           <button class="btn button-icon-pink btn-sm" onclick="decrementQuantity(${i}, ${productIds[i]})">-</button>
            <span id="product-quantity-${productIds[i]}">${initialQuantity}</span>
-           <button class="btn btn-secondary btn-sm" onclick="incrementQuantity(${i}, ${productIds[i]})">+</button>
+           <button class="btn button-icon-pink btn-sm" onclick="incrementQuantity(${i}, ${productIds[i]})">+</button>
          </span>
        </p>
      `;
@@ -119,6 +128,10 @@ document.addEventListener("DOMContentLoaded", function () {
    console.log(cart)
   });
 });
+
+function updateLocalStorageCart() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 window.incrementQuantity = function(index, productId) {
   const quantityElement = document.querySelector(`#product-quantity-${productId}`);
@@ -174,9 +187,9 @@ function updateCartModal() {
   for (const product of cart) {
     cartModalBody.innerHTML += `
       <p>
-        ${product.name} - €${(product.price * product.quantity).toFixed(2)} (Quantidade: ${product.quantity})
-        <button class="btn btn-secondary btn-sm" onclick="incrementCartItem(${product.id})">+</button>
-        <button class="btn btn-secondary btn-sm" onclick="decrementCartItem(${product.id})">-</button>
+        ${product.name} - €${(product.price * product.quantity).toFixed(2)} (Qtd: ${product.quantity})
+        <button class="btn button-icon-pink btn-sm" onclick="incrementCartItem(${product.id})">+</button>
+        <button class="btn button-icon-pink btn-sm" onclick="decrementCartItem(${product.id})">-</button>
       </p>
     `;
 
@@ -190,6 +203,8 @@ function updateCartModal() {
     cartModalBody.textContent = 'Carrinho vazio, adicione produtos!';
     whatsappButton.disabled = true; // Desabilita o botão
   }
+
+  updateLocalStorageCart();
 
   // Atualize o total e o número de itens no modal do carrinho
   document.querySelector('#cartTotal').textContent = cartTotal.toFixed(2);
