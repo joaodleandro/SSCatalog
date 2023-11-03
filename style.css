@@ -38,6 +38,7 @@ img {
         margin: 10px auto; /* 10px de margem superior e inferior, e centralize o carrossel horizontalmente */
         position: relative; /* Permitirá posicionar os controles de forma relativa a este contêiner */
         display: block; /* Defina o elemento como bloco para evitar margens extras na parte inferior */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .carousel {
