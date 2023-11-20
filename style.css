@@ -150,6 +150,16 @@ img {
     touch-action: pan-y pinch-zoom;
   }
 
+  .carousel-container {
+    transform-origin: 0 0;
+    transform: scale(1);
+  }
+
+  .carousel-item {
+    width: 100%; 
+    overflow: hidden; 
+  }
+
   .navbar-brand#pageTracker {
     display: none;
   }
