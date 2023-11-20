@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  const cartModalBody = document.querySelector('#cartModalBody');
+  cartModalBody.innerHTML = '';
+  cartModalBody.textContent = 'Carrinho vazio, adicione produtos!';
+
+  const whatsappButton = document.getElementById('whatsappButton');
+  whatsappButton.disabled = true;
+
     if (localStorage.getItem("cart")) {
       cart = JSON.parse(localStorage.getItem("cart"));
       updateCartModal();
@@ -26,9 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.to === 0) {
             prevArrow.classList.add("d-none");
             nextArrow.classList.remove("d-none");
+
         } else if (e.to === totalSlides - 1) {
             prevArrow.classList.remove("d-none");
             nextArrow.classList.add("d-none");
+
         } else {
             prevArrow.classList.remove("d-none");
             nextArrow.classList.remove("d-none");
@@ -52,6 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
        nextTenButton.classList.remove("d-none");
      }
    });
+
+  updatePageTracker();
    
    prevArrow.addEventListener("click", function () {
     currentPage-=1
@@ -88,8 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
             pageTracker.textContent = `Página ${currentPage} de 24`;
         }   
    }
-
-   updatePageTracker();
 
    var cart = [];
    var productNames;
@@ -171,11 +180,6 @@ window.decrementQuantity = function(index, productId) {
   }
 };
 
-const cartModalBody = document.querySelector('#cartModalBody');
-cartModalBody.innerHTML = '';
-cartModalBody.textContent = 'Carrinho vazio, adicione produtos!';
-
-
 function updateCartModal() {
   cartModalBody.innerHTML = '';
   cartModalBody.textContent = '';
@@ -234,9 +238,6 @@ window.decrementCartItem = function(productId) {
     updateCartModal();
   }
 }  
-
-const whatsappButton = document.getElementById('whatsappButton');
-whatsappButton.disabled = true;
 
 document.querySelector('#whatsappButton').addEventListener('click', function () {
   const cartTotal = document.querySelector('#cartTotal').textContent;
