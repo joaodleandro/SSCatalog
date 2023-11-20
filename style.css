@@ -146,6 +146,10 @@ img {
 
 @media (max-width: 1024px) {
 
+  .carousel.pointer-event {
+    touch-action: pan-y pinch-zoom;
+  }
+
   .navbar-brand#pageTracker {
     display: none;
   }
